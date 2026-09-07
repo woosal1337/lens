@@ -9,6 +9,8 @@
 
 **No upload. No account. No server.**
 
+[**Open Lens**](https://lens.chele.bi) · [**See the demo**](https://lens.chele.bi/preview/)
+
 [MIT license](LICENSE) · [Privacy and security](SECURITY.md) · [Deployment](docs/deployment.md)
 
 </div>

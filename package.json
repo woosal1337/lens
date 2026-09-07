@@ -1,19 +1,31 @@
 {
   "name": "lens",
   "version": "0.1.0",
-  "description": "Read your Instagram data export in your browser. No upload, no account, no server.",
+  "description": "Read your Instagram export on your own machine. No upload, no account, no server.",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/woosal1337/lens.git"
   },
-  "homepage": "https://github.com/woosal1337/lens",
+  "bugs": {
+    "url": "https://github.com/woosal1337/lens/issues"
+  },
+  "author": {
+    "name": "Ege Chelebi",
+    "url": "https://github.com/woosal1337"
+  },
+  "homepage": "https://lens.chele.bi",
   "keywords": [
     "instagram",
+    "instagram-data",
     "data-export",
     "privacy",
     "local-first",
-    "dashboard"
+    "privacy-tools",
+    "dashboard",
+    "data-visualization",
+    "personal-data",
+    "no-tracking"
   ],
   "private": true,
   "engines": {
