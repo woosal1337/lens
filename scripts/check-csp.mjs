@@ -1,3 +1,4 @@
+import { readFileSync } from "node:fs";
 import { securityHeaders } from "./security-policy.mjs";
 
 const policy = securityHeaders["Content-Security-Policy"];
@@ -16,4 +17,12 @@ for (const directive of [
 }
 if (policy.includes("'unsafe-eval'"))
   throw new Error("Remove unsafe-eval from the production policy.");
+const vercel = JSON.parse(readFileSync("vercel.json", "utf8"));
+const vercelRule = vercel.headers.find((rule) => rule.source === "/(.*)");
+const vercelHeaders = Object.fromEntries(
+  (vercelRule?.headers ?? []).map(({ key, value }) => [key, value])
+);
+for (const [name, value] of Object.entries(securityHeaders)) {
+  if (vercelHeaders[name] !== value) throw new Error(`Restore the Vercel header: ${name}`);
+}
 console.log("The production policy blocks connections, frames, plugins, forms, and base URLs.");
