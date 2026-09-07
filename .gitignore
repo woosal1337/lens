@@ -1,0 +1,33 @@
+node_modules
+.next
+out
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+.env
+.env.*
+!.env.example
+coverage
+.eslintcache
+/reference
+
+# agent instructions, local only
+AGENTS.md
+CLAUDE.md
+.claude/
+.cursor/
+.cursorrules
+.aider*
+.mcp.json
+
+# local real-data fixture, never committed
+*.local.json
+lib/fixture/generate.test.ts
+
+PROJECT.json
+research/
+*.zip
+*.pem
+*.key
+*.p12
+*.pfx

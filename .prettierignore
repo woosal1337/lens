@@ -1,0 +1,6 @@
+.next
+out
+node_modules
+public/fonts
+reference
+package-lock.json

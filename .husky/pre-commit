@@ -1,0 +1,4 @@
+set -e
+npm run verify
+npm run build
+npm run check:build
